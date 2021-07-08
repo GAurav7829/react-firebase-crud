@@ -35,6 +35,7 @@ const AddUser = (props) => {
         setFname('');
         setLname('');
         setEmail('');
+        props.updateCurrentUser();
     }
     useEffect(() => {
         if (props.currentUser) {

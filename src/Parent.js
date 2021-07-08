@@ -41,11 +41,16 @@ const Parent = () => {
             </td>
         </tr>
     }) : null;
+
+    const setCU = () => {
+        setCurrentUser();
+    }
+
     return (<>
         <div className='container'>
             <div className='row justify-content-center text-center mt-3'>
                 <div className='col-md-6 shadow p-3 mb-5 bg-white rounded'>
-                    <AddUser currentUser={currentUser} />
+                    <AddUser currentUser={currentUser} updateCurrentUser={setCurrentUser} />
                 </div>
             </div>
             <div className='row justify-content-center'>
